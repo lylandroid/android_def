@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机钱包应用</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">dummy_content</string>
+    <string name="tab_function">钱包账户</string>
+    <string name="tab_news_center">卡片管理</string>
+    <string name="tab_smart_service">话费充值</string>
+    <string name="tab_gov_affairs">我的</string>
+    <string name="removeItem">删除</string>
+    <string name="def_nick_name">请登录</string>
+    <string name="load_more">加载中...</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <!--  -->
+    <!--  -->
+    <string name="appCode">zjhtwallet</string>
+    <string name="appCodeZjht">dianziquan</string>
+    <string name="appKey">12345678</string>
+    <string name="appId">dianziquan</string>
+    <!--
+    // 汇通宝APP项目：(requestType=huitongbao，默认)；中行APP项目：
+	// (requestType=zhonghang)
+    -->
+    <string name="requestType">huitongbao</string>
+    <string name="key_zjht">wZ4q/r9o7633wbyd9w3WpA6RTO/C+BUN</string>
+
+</resources>

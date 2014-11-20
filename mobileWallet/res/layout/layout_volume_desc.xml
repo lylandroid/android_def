@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/content_top"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10.0dp" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" >
+
+                        <FrameLayout
+                            android:id="@+id/show_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" >
+
+                            <ImageView
+                                android:id="@+id/iv_er_wei_ma"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dip"
+                                android:background="@drawable/er_wei_ma" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/show_img"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/font_size_tv_left" >
+
+                            <!-- 电子卷号 -->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="3.0dip"
+                                android:padding="2dp"
+                                android:text="电子卷号："
+                                android:textColor="@color/color_et_hint"
+                                android:textSize="@dimen/font_size_tv_left" />
+
+                            <TextView
+                                android:id="@+id/volume_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="3.0dip"
+                                android:padding="2dp"
+                                android:text="1781090759235354"
+                                android:textColor="@color/color_et_hint"
+                                android:textSize="@dimen/font_size_tv_left" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/line_item"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_below="@id/ll_item"
+                            android:background="@color/my_split_bottom" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/line_item"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="@dimen/font_size_tv_left"
+                                android:layout_marginTop="10.0dip"
+                                android:padding="2dp"
+                                android:text="使用说明"
+                                android:textColor="@color/color_tv_left"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/font_size_tv_left"
+                                android:paddingBottom="6dp"
+                                android:paddingLeft="32dp"
+                                android:text="请在POS机上扫我，或者在POS机上输入的电子卷"
+                                android:textColor="@color/color_tv_left"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 我的电子卷LinearLayout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bt_margin_left_and_right"
+                android:layout_marginRight="@dimen/bt_margin_left_and_right"
+                android:layout_marginTop="@dimen/content_top"
+                android:background="@drawable/listview_item_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:background="@null"
+                    android:hint="请输入转让对象手机号码"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/font_size_bt"
+                    android:windowSoftInputMode="stateHidden" />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:id="@+id/bt_submit"
+                style="@style/bt_style"
+                android:text="转  让" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

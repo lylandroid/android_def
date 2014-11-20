@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_top"
+                android:background="#FFFFFF"
+                android:paddingBottom="10.0dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true" >
+
+                    <LinearLayout
+                        android:id="@+id/show_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/iv_head"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dip" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_show_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/show_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="3.0dip"
+                        android:padding="2dp"
+                        android:text="@string/def_nick_name"
+                        android:textColor="@color/color_tv_left"
+                        android:textSize="@dimen/sp_eighteen" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 选择头像的input -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:background="@drawable/login_edit_background"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="@dimen/bt_margin_left_and_right"
+                android:layout_marginRight="@dimen/bt_margin_left_and_right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <EditText
+                    android:id="@+id/et_nick_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入昵称"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_et_hint"
+                    android:textSize="@dimen/font_size_tv_left"
+                    android:windowSoftInputMode="stateHidden" />
+
+                <ImageButton
+                    android:id="@+id/ib_clear_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/clear_right_size"
+                    android:background="@drawable/btclose_bgdown" />
+            </LinearLayout>
+            <!-- end 选择头像的input -->
+
+            <Button
+                android:id="@+id/bt_select_head"
+                style="@style/bt_style"
+                android:text="选择头像" />
+
+            <Button
+                android:id="@+id/bt_save"
+                style="@style/bt_style"
+                android:text="上  传" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

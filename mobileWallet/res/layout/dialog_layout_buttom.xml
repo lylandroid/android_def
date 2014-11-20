@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2D1D1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/bt_margin_left_and_right"
+        android:paddingRight="@dimen/bt_margin_left_and_right" >
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/color_tv_left"
+            android:textSize="@dimen/font_size_tv_left"
+            android:text="申请汇通卡失败，原因 XXX    XXX  XXXXX XXXXXXXX" />
+
+<!--             android:background="@drawable/bt_dialog_selector" -->
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_marginTop="12dp"
+            style="@style/bt_style"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/item_layout_title_bar" />
+
+    <!-- 最外层layout -->
+
+
+    <!-- 交易明细 -->
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/ll_transactions_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar">
+
+    </ListView> <!-- 最外层layout -->
+
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/item_layout_title_bar" />
+
+    <!-- 最外层layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/content_top"
+            android:background="@drawable/login_edit_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_pay_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:drawableLeft="@drawable/select_goods_btn"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text=" 支付成功"
+                android:textColor="@color/color_momey_success"
+                android:textSize="@dimen/font_size_momey_success" />
+        </LinearLayout>
+        <!-- 充值金额 -->
+
+        <LinearLayout
+            android:id="@+id/rl_item_menoy30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/tv_momey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:text="100.00元"
+                android:textColor="@color/color_momey"
+                android:textSize="@dimen/font_size_momey_success" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/my_split_bottom" />
+        <!-- 支付详情描述 -->
+
+        <LinearLayout
+            android:id="@+id/rl_item_menoy30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="  商         品"
+                android:textColor="@color/color_tv_left"
+                android:textSize="@dimen/font_size_tv_left" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="100元话费—13924567854"
+                android:textColor="@color/color_tv_left"
+                android:textSize="@dimen/font_size_tv_left" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/my_split_bottom" />
+
+        <LinearLayout
+            android:id="@+id/rl_item_menoy30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="  订  单   号"
+                android:textColor="@color/color_tv_left"
+                android:textSize="@dimen/font_size_tv_left" />
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="234567890123456"
+                android:textColor="@color/color_et_hint"
+                android:textSize="@dimen/font_size_tv_left" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/my_split_bottom" />
+
+        <LinearLayout
+            android:id="@+id/rl_item_menoy30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="交易时间"
+                android:textColor="@color/color_tv_left"
+                android:textSize="@dimen/font_size_tv_left" />
+
+            <TextView
+                android:id="@+id/tv_pay_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="2014-12-1 11:25:26"
+                android:textColor="@color/color_et_hint"
+                android:textSize="@dimen/font_size_tv_left" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:background="@color/my_split_bottom" />
+
+        <LinearLayout
+            android:id="@+id/rl_item_menoy30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="  当前状态"
+                android:textColor="@color/color_tv_left"
+                android:textSize="@dimen/font_size_tv_left" />
+
+            <TextView
+                android:id="@+id/tv_pay_status2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="支付成功"
+                android:textColor="@color/color_momey_success"
+                android:textSize="@dimen/font_size_tv_left" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/my_split_bottom" />
+    </LinearLayout> <!-- 最外层layout -->
+
+</RelativeLayout>

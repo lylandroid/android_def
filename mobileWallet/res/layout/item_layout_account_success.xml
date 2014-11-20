@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/login_edit_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/bt_margin_left_and_right"
+                    android:gravity="center"
+                    android:text="账     号"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <EditText
+                    android:id="@+id/et_account_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:text="1234567 8888 12345678"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="#FF6600"
+                    android:textColorHint="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left"
+                    android:windowSoftInputMode="stateHidden" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/bt_margin_left_and_right"
+                    android:gravity="center"
+                    android:text="余     额"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <EditText
+                    android:id="@+id/et_left_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="0元"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="#FF6600"
+                    android:textColorHint="#FF6600"
+                    android:windowSoftInputMode="stateHidden" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_ten"
+                android:layout_marginTop="@dimen/dp_ten"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/bt_margin_left_and_right"
+                    android:gravity="center"
+                    android:text="有效期"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <EditText
+                    android:id="@+id/et_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_five"
+                    android:layout_marginRight="@dimen/dp_five"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="2016年01月31日"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColorHint="#999999"
+                    android:windowSoftInputMode="stateHidden" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
