@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/login_edit_background"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/input_left_size" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="商品:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="道具钻石卡"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="金额:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_momey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="10.00元"
+                    android:textColor="@color/color_bt"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/xingyong" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="您有1000元信用额度可以使用"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

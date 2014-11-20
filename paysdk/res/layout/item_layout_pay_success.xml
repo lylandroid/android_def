@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_ten"
+            android:background="@drawable/login_edit_background"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/input_left_size" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="商        品:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="道具钻石卡"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="金        额:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_momey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="10.00元"
+                    android:textColor="@color/color_momey"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_order_num"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="订  单  号:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="12345678910"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_line_hidden"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="交易时间:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="2014-10.10 11:11:11"
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="@dimen/dp_five"
+                android:background="@drawable/listview_split_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/input_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="状        态:  "
+                    android:textColor="@color/color_tv_left"
+                    android:textSize="@dimen/font_size_tv_left" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dp_ten"
+                    android:gravity="center"
+                    android:text="支付成功"
+                    android:textColor="@color/color_momey_success"
+                    android:textSize="@dimen/font_size_tv_left" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
