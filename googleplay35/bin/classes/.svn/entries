@@ -1,0 +1,38 @@
+10
+
+dir
+10
+http://192.168.1.100:8091/svn/project/googleplay35/src
+http://192.168.1.100:8091/svn/project
+
+
+
+2014-09-06T01:36:15.671596Z
+10
+mwqi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08c123cd-9476-0b49-a3d4-103b597d4688
+
+
+
+
+
+
+0
+
+com
+dir
+

@@ -1,0 +1,71 @@
+package com.example.googleplay35.fragment;
+
+import java.util.List;
+
+import com.example.googleplay35.utils.UIUtils;
+import com.example.googleplay35.utils.ViewUtils;
+import com.mwqi.ui.widget.LoadingPage;
+import com.mwqi.ui.widget.LoadingPage.LoadResult;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public abstract class BaseFragment extends Fragment {
+
+	private LoadingPage mContentView;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		if (mContentView == null) {
+			mContentView = new LoadingPage(UIUtils.getContext()) {
+
+				@Override
+				public View createLoadedView() {
+					// TODO Auto-generated method stub
+					return BaseFragment.this.loadView();
+				}
+
+				@Override
+				public LoadResult loaded() {
+					// TODO Auto-generated method stub
+					return BaseFragment.this.load();
+				}
+
+			};
+		} else {
+
+			ViewUtils.removeSelfFromParent(mContentView);
+		}
+
+		return mContentView;
+	}
+
+	public LoadResult check(Object obj) {
+		if (obj == null) {
+			return LoadResult.ERROR;
+		}
+		if (obj instanceof List) {
+			List list = (List) obj;
+			if (list.size() == 0) {
+				return LoadResult.EMPTY;
+			}
+		}
+		return LoadResult.SUCCEED;
+	}
+
+	protected abstract LoadResult load();
+
+	public abstract View loadView();
+
+	public void show() {
+		// TODO Auto-generated method stub
+		if (null != mContentView) {
+			mContentView.show();
+		}
+	}
+
+}
