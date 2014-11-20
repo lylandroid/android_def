@@ -1,0 +1,98 @@
+html{
+}
+body {
+	margin:0;
+	padding:0;
+	font:15px/1.5 '微软雅黑',Microsoft YaHei,Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+	background-color:#FFFFFF;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+input,button,select{
+	font-family:'微软雅黑',Microsoft YaHei,Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+}
+h2{
+	font-size:16px;
+	color:#FFF;
+	font-weight:normal;
+	padding:6px 8px 0px 8px;
+	margin:0;
+}
+img{
+	border:none;
+	padding:0;
+	margin:0;
+}
+.wrapper{
+	width:100%;
+}
+.h100{
+	width:100%;
+	background-color:#CCC;
+}
+.w94{
+	width:94%;
+	margin:0 auto;
+}
+.w97{
+	width:97%;
+}
+.w50{
+	width:50%;
+}
+.w40{
+	width:40%;
+}
+.color82{
+	color:#828282;
+}
+.float_left{
+	float:left;
+}
+.float_right{
+	float:right;
+}
+a,a:link,a:active,a:visited {
+	color:#FFF;
+	text-decoration:none;
+}
+a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+.colors{
+	background-color:#ea2340;
+	width:100%;
+}
+.fourui{
+	float:left;
+	width:96%;
+	padding:2%;
+}
+.mall{
+	background-color:#f3b613; 
+	width:49%;
+	padding-bottom:5px;
+}
+.ticket{
+	background-color:#368ff4; 
+	width:49%;
+	padding-bottom:5px;
+}
+.twocode{
+	background-color:#fb667b;
+	width:49%;
+	margin-top:2%;
+	padding-bottom:5px;
+}
+.more{
+	background-color:#84d018;
+	width:49%;
+	margin-top:2%;
+	padding-bottom:5px;
+}

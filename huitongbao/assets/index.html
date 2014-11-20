@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="language" content="chinese" />
+<title>首页</title>
+<link rel="stylesheet" href="stylesheet/home.css" type="text/css" media="all"/>
+
+</head>
+<body>
+<div class="wrapper h100">
+	<div class="colors">
+    	<a href="http://wx.expresspay.cn/index.php?c=welcome&m=more&target=wmpay.do">
+    	<h2>缤纷首页</h2>
+        <img src="images/colors.png" width="100%" height="auto" border="0" style="margin-bottom:-8px;"/>
+        </a>
+    </div>
+  <div class="fourui">
+    <div class="float_left mall">
+    	<a href="#">
+    	<h2>商城</h2>
+        <img src="images/mall.png" width="100%" height="auto" border="0" />
+        </a>
+    </div>
+	<div class="float_right ticket">
+    	<a href="http://wx.expresspay.cn/index.php?c=welcome&m=ownCodeList&target=wmpay.do">
+    	<h2>我的现金券</h2>
+        <img src="images/ticket.png" width="100%" height="auto" border="0"  />
+        </a>
+    </div>
+    <div class="float_left twocode">
+    	<a href=#"">
+    	<h2>二维码支付</h2>
+        <img src="images/twocode.png" width="100%" height="auto" border="0"  />
+        </a>
+    </div>
+    <div class="float_right more">
+    	<a href="#">
+    	<h2>更多</h2>
+        <img src="images/more.png" width="100%" height="auto" border="0"  />
+        </a>
+    </div>    
+  </div>
+</div>
+<script src="http://wx.expresspay.cn/js/jquery-1.3.2.min.js"></script>
+<script>
+$(document).ready(function (){
+var url = "http://wx.expresspay.cn/index.php?c=id&m=index";
+var b=null;
+function getOpenId(){
+ b = localStorage.getItem("openid");
+if(b==null){
+$.ajax({url:url,success: function(data){
+localStorage.setItem("openid",data.openid);
+b= data.openid;
+},type:'GET',dataType:'json',async:false});
+}
+}
+getOpenId();
+$('a').each(function (){
+this.href=this.href+"&openid="+b;
+});
+});
+</script>
+</body>
+</html>
