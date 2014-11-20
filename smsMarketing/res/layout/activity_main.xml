@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/home_back"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/home_parent_left_size"
+        android:paddingTop="@dimen/home_parent_top_size" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            layout="@layout/item_layout_home_desc" />
+
+        <include
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            layout="@layout/item_layout_home_refresh" />
+
+        <LinearLayout
+            android:id="@+id/ll_wait_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_tuiguang" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/vertical_line" />
+            </LinearLayout>
+
+            <include layout="@layout/item_layout_home_momentum" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/item_layout_home_radiobutton" />
+    </LinearLayout>
+
+</LinearLayout>

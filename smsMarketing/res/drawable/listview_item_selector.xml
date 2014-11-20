@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bt_presssed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bt_presssed" android:state_selected="true"/>
+    <!-- <item android:drawable="@color/selector_pressed_back" android:state_checked="true"/> -->
+    <!-- focused -->
+    <item android:drawable="@color/selector_def_back"/>
+    <!-- <item android:drawable="@drawable/rounded_corners_view"/> -->
+	
+</selector>

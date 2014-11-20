@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/parent_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_top"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:paddingBottom="10.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/bt_back"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="登 录"
+                    android:textColor="@color/color_bt"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:src="@drawable/head_def"
+                        android:id="@+id/iv_head"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名(点击登录)"
+                            android:textColor="@color/color_tv_left"
+                            android:textSize="@dimen/font_size_tv_left" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="13043368272"
+                            android:textColor="@color/color_tv_left"
+                            android:textSize="@dimen/font_size_tv_left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 我的电子卷LinearLayout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listview_item_selector"
+                    android:paddingBottom="13.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="13.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_ten"
+                        android:text="设置"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/sp_eighteen" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/dp_ten"
+                        android:src="@drawable/item_right_bt" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 关于我们下面的所有布局LinearLayout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_top"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_version_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listview_item_selector"
+                    android:paddingBottom="13.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="13.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_ten"
+                        android:text="注销"
+                        android:textColor="@color/my_textcolor"
+                        android:textSize="@dimen/sp_eighteen" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="@dimen/dp_ten"
+                        android:src="@drawable/item_right_bt" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <RadioButton
+            android:id="@+id/rb_potential_user"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/circle"
+            android:text="潜在客户" />
+
+        <RadioButton
+            android:id="@+id/rb_back_record"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_phone"
+            android:text="回拨记录" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_head_pic"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/background_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/listview_item_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="13.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingTop="13.0dip" >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:text="今天"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <TextView
+            android:id="@+id/tv_day_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_ten"
+            android:layout_toRightOf="@id/tv_day"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="处销活动,XXXX商品优ddd顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶"
+            android:textColor="@color/my_textcolor"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:paddingRight="@dimen/dp_ten"
+            android:src="@drawable/item_right_bt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/my_split_bottom" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天待发："
+            android:textColor="@color/home_white"
+            android:textSize="@dimen/home_momentum_font_size" />
+
+        <TextView
+            android:id="@+id/tv__today_momentum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:textColor="@color/home_white"
+            android:textSize="@dimen/home_momentum_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有待发："
+            android:textColor="@color/home_white"
+            android:textSize="@dimen/home_momentum_font_size" />
+
+        <TextView
+            android:id="@+id/tv__total_momentum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999"
+            android:textColor="@color/home_white"
+            android:textSize="@dimen/home_momentum_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已        发："
+            android:textColor="#a3d1f7"
+            android:textSize="@dimen/home_momentum_font_size" />
+
+        <TextView
+            android:id="@+id/tv__hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7000"
+            android:textColor="#a3d1f7"
+            android:textSize="@dimen/home_momentum_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

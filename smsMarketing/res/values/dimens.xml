@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">180dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">2.0dip</dimen>
+    <dimen name="bottom_tab_font_size">18.0sp</dimen>
+
+    <!-- 拷贝团购app -->
+    <dimen name="dp_ten">12.0dip</dimen>
+    <dimen name="sp_eighteen">18.0sp</dimen>
+    <dimen name="dp_five">5.0dip</dimen>
+
+    <!-- 美工字体大小 -->
+    <dimen name="font_size_title_bar">18sp</dimen>
+    <dimen name="font_size_tv_left">16dp</dimen>
+    <dimen name="font_size_bt">18sp</dimen>
+    <dimen name="font_size_desc">12sp</dimen>
+    <dimen name="font_size_momey">36sp</dimen>
+    <dimen name="font_size_momey_success">19sp</dimen>
+    <!--  -->
+    <dimen name="item_height">45dp</dimen>
+    <dimen name="icon_width">280dp</dimen>
+    <dimen name="icon_height">178dp</dimen>
+    <dimen name="icon_top">30dp</dimen>
+    <dimen name="icon_buttom">12dp</dimen>
+    <dimen name="get_code_width">130dp</dimen>
+    <dimen name="get_code_height">39dp</dimen>
+    <dimen name="bt_width">676dp</dimen>
+    <dimen name="bt_height">46dp</dimen>
+    <dimen name="input_height">45dp</dimen>
+    <dimen name="clear_right_size">18dp</dimen>
+    <dimen name="input_left_size">16dp</dimen>
+    <dimen name="content_top">12dp</dimen>
+    <dimen name="bt_margin_left_and_right">22dp</dimen>
+    <!-- googleplay -->
+    <dimen name="list_item_loadmore_height">40dp</dimen>
+    <dimen name="list_item_margin">9dp</dimen>
+
+    <!-- 手机短信营销 dp -->
+    <dimen name="home_parent_left_size">24dp</dimen>
+    <dimen name="home_parent_top_size">30dp</dimen>
+    <dimen name="home_momentum_font_size">19sp</dimen>
+
+    <!-- 手机短信营销 sp -->
+
+</resources>

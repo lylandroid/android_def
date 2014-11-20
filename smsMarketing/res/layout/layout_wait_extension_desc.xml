@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_top"
+        android:background="@color/selector_def_back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="13.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="13.0dip" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:text="标题："
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/sp_eighteen" />
+
+            <TextView
+                android:id="@+id/tv_day_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="处销活动,XXXX商品优ddd顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶"
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/sp_eighteen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="20dp"
+            android:background="@color/my_split_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/selector_def_back"
+            android:orientation="vertical"
+            android:paddingBottom="13.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="13.0dip" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:text="内容："
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/sp_eighteen" />
+
+            <TextView
+                android:id="@+id/tv_day_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:layout_marginRight="@dimen/dp_ten"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:text="处销活动,XXXX商品优ddd顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_eighteen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="20dp"
+            android:background="@color/my_split_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/selector_def_back"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="13.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="13.0dip" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_ten"
+                android:text="发布者："
+                android:textColor="@color/my_textcolor"
+                android:textSize="@dimen/sp_eighteen" />
+
+            <TextView
+                android:id="@+id/tv_day_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="sdf发生大幅度fsd"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_eighteen" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

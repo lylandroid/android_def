@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_dialog_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2D1D1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/bt_margin_left_and_right"
+            android:paddingRight="@dimen/bt_margin_left_and_right"
+            android:lineSpacingExtra="5dp"
+            android:text="申请汇通卡"
+            android:textColor="@color/color_tv_left"
+            android:textSize="@dimen/font_size_tv_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_submit"
+                style="@style/bt_style"
+                android:layout_width="0dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="确定" />
+
+            <Button
+                android:id="@+id/bt_cancel"
+                style="@style/bt_style"
+                android:layout_width="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
