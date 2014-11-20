@@ -1,0 +1,28 @@
+package com.itheima.mobileguard.db.dao;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+//select desc from datable where md5='a2bd62c89207956348986bf1357dea01'
+
+public class AntiVirusDao {
+	
+	/**
+	 * 检查某个md5是否是病毒
+	 * @param md5
+	 * @return
+	 */
+	public static String checkVirus(String md5){
+		String desc ="扫描安全";
+		//打开病毒数据库
+		SQLiteDatabase db = SQLiteDatabase.openDatabase("/data/data/com.itheima.mobileguard/files/antivirus.db",
+				null, SQLiteDatabase.OPEN_READONLY);
+		Cursor cursor = db.rawQuery("select desc from datable where md5=?", new String[]{md5});
+		if(cursor.moveToNext()){
+			desc = cursor.getString(0);
+		}
+		cursor.close();
+		db.close();
+		return desc;
+	}
+}

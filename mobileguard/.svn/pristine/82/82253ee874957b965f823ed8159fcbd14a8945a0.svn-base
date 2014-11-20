@@ -1,0 +1,52 @@
+package com.itheima.mobileguard.activities;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
+
+import com.itheima.mobileguard.R;
+import com.itheima.mobileguard.db.dao.AntiVirusDao;
+import com.itheima.mobileguard.utils.Md5Utils;
+
+public class AntiVirusActivity extends Activity {
+	private ImageView iv_scan;
+	private PackageManager pm;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		pm = getPackageManager();
+		setContentView(R.layout.activity_anti_virus);
+		iv_scan = (ImageView) findViewById(R.id.iv_scan);
+		RotateAnimation ra = new RotateAnimation(0, 360,
+				Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+		ra.setRepeatCount(Animation.INFINITE);
+		ra.setDuration(2000);
+		iv_scan.startAnimation(ra);
+		
+		
+		scanVirus();
+		
+	}
+	
+	private void scanVirus() {
+		new Thread(){
+			public void run() {
+				//检查手机里面的每一个应用程序
+				 List<PackageInfo> packInfos = 	pm.getInstalledPackages(0);
+				 for(PackageInfo info: packInfos){
+					 String apkpath = info.applicationInfo.sourceDir;
+					 //检查获取这个文件的 特征码 
+					 String md5info =  Md5Utils.getFileMd5(apkpath);
+					 String result =  AntiVirusDao.checkVirus(md5info);
+					 System.out.println(info.applicationInfo.loadLabel(pm)+ result);
+				 }
+			};
+		}.start();
+	}
+}
